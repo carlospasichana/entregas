@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');    
 @import url('https://fonts.cdnfonts.com/css/regen');
+
 :root{
     --tipografia:"Bebas Neue", sans-serif;
     --tipografia2:"Reddit Sans", sans-serif;
@@ -21,13 +22,14 @@
 }
 
 body{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
     
 /* fondo principal */
 .fondo{
-    height: 100vh;
+  height: 100vh;
    width: 100%;
     font-family: var(--tipografia);
  background-color: var(--colorFondo);
@@ -145,49 +147,36 @@ z-index: 999;
 
     /* INICIO SECCIÓN INFORMATIVA */
 /* contenido general */
-
-.main{
-    
-width: 100%;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+/* main: contenedor pader */
+main{
 
 }
+/* contenedor hijo1 */
+#seccion{
 
-/* lado izquiero*/
-.seccion{
-    width: 50%;
+    display: flex;
+}
+
+/* div hijo 1.1 */
+/* propiedades contenedor hijo1.1 */
+.izquierdo{
     height: 100vh;
+    width: 50%;
     position: relative;
-    
 }
 
-/* imagen de perfil */
-.seccion img{
-    position: absolute;
-    left: 200px;
-    top: 60px;
-    
-    
-}
 
-/* recuadro con opacidad rojo */
+/* recuadro rojo con opacidad */
 .box{
     width: 600px;
     height: 100px;
     background-color: var(--colorRojo);
-    position: absolute;
-    bottom: 40px;
-    z-index: 2;
     opacity: .6;
-    
-    
+    position: absolute;
+    bottom: 65px;
 }
 
-/* edición numero de pagina peqeño */
-
+/* numero de pagina pequeño */
 .pag2{
 
     font-size: 7rem;
@@ -195,55 +184,28 @@ align-items: center;
     writing-mode: vertical-rl;
     color: var(--colorTexto);
     position: absolute;
-    left: 90px;
-    bottom: 15px;
-    z-index: 5;
-
+    left: 50px;
+    bottom: 20px;
 
 }
 
-/* lado derecho */
-/* medio fondo */
-.aside{
-    background-color: var(--colorFondo);
+/* div hij0 1.2 */
+
+/* propiedades contenedor hijo 1.2 */
+.derecho{
     width: 50%;
     height: 100vh;
-    position: relative;
+    background-color: var(--colorFondo);
+}
+
+h2{
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    font-size: 40px;
     
 }
 
-/* titulo : acerca de mi */
-
-aside h2{
-    font-size: 2rem;
-    font-family: var(--tipografia);
-    color: var(--colorTexto);
-    justify-content: center;
-    text-align: center;
-    padding: 150px 0px;
-    position: relative;
-    z-index: 3
-
-}
-
-/* parrafo */
-.aside p{
+p{
     font-family: var(--tipografia3);
-    text-align: justify;
-    color: var(--colorTexto);
-    padding: 30px 70px;
-    position: relative;
-    z-index: 4;
-}
-
-/* edición numero de pagina con opacidad grande */
-.pagdos{
-position: absolute;
-width: 800px;
-height: 507px;
-left: 0px;
-top: 0%;
-z-index: 2;
-
 }
 
