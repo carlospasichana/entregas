@@ -1,81 +1,249 @@
-/* Importaciones */
-
-@import url('https://fonts.cdnfonts.com/css/familjen-grotesk');
-
-:root{
-    --tipografia:'familjen-grotesk', sans-serif;
-    --colorFondo:#DFDFDF;
-    --colorTexto:#222831;
-
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
 }
 
-*{
-/* Estilos en todo mi sitio web */
-    margin: 0;
-    padding: 0;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');    
+@import url('https://fonts.cdnfonts.com/css/regen');
+:root{
+    --tipografia:"Bebas Neue", sans-serif;
+    --tipografia2:"Reddit Sans", sans-serif;
+    --tipografia3:'Regen', sans-serif;
+    --colorTexto: #333333;
+    --colorFondo: #DFDFDF; 
+    --colorRojo: #FF512F;
+
+
 }
 
 body{
- 
     width: 100%;
-    
-    background-color: var(--colorFondo);
-    font-family: var(--tipografia);
-    color: var(--colorTexto);
-
     overflow-x: hidden;
-    box-sizing: border-box;
+}
+    
+/* fondo principal */
+.fondo{
+    height: 100vh;
+   width: 100%;
+    font-family: var(--tipografia);
+ background-color: var(--colorFondo);
+ position: relative;
+ color: var(--colorTexto);
+
 }
 
-/* HEADER */
+/* menu de navegacion */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    padding: 20px 50px;
+}
 
+/* lista menu de navegacion */
+                             
+ul li{
+    font-family: var(--tipografia);
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;  
+    font-size: 1.2rem;
+ 
+    
+}
+
+/* titulos principales */
 header{
 
-    width: 100vw;
-    height: 100vh;
-}
-
-.menuNav{
-    width: 0%;
-    height: 0%;
-    position: relative;
-    left: 70px;
-    top: 80px;
-}
-
-.listaMenu{
-
-    height: 100%;
-
-    display: flex;
-
-    justify-content: left;
-
-    gap: 70px;
-
-    list-style: none;
-
-}
-
-.listaMenu a{
-
-    text-decoration: none;
-    color: var(--colorTexto);
-    font-size: 18px;
-}
-
-.render{
-/* ancho */
-    width: 900px;
-
-    /* alto */
-    height: 600px;
-
     position: absolute;
-    right: 30px;
-    top: 180px;
+    bottom: 40%;
+    padding: 0px 50px;
+}
 
+    /* tipografia --> portafolio */
+    .textopor{
+    font-family: var(--tipografia3);
+    }
+
+/* superposición titulos y detalle numero de pagina */
+.titulos{
+    position: absolute;
+    z-index: 4;
+
+}
+
+/* titulo 1: portafolio */
+header h1{
+    
+    font-size: 11rem;
+    color: var(--colorRojo);
+}
+    
+
+/* titulo 2: industrial desing */
+header h2{
+    margin-top: -40px;
+    margin-bottom: -20px;
+    font-size: 7rem;
+    
+}
+
+/* titulo 3: carlos pasichana */
+header h3{
+    font-size: 2rem;
+    font-family: var(--tipografia3);
+}
+
+/* detalle numero de pagina 001 pequeño*/
+.numeroPag{
+    font-size: 7rem;
+    font-family: var(--tipografia);
+    writing-mode: vertical-rl;
+    color: var(--colorTexto);
+    position: absolute;
+    bottom: 7%;
+    padding: 0px 1350px;
+    
+}
+
+/* ubicación img carro */
+.render{
+position: absolute;
+height: 566px;
+width: 787px;
+right: 0%;
+bottom: 0;
+z-index: 999;
+}
+
+/* ubicacion img sombra */
+.sombra{
+    position: absolute;
+    height: 566px;
+    width: 787px;
+    right: -4%;
+    top: 28%;
+
+}
+
+/* numero de pagina opacidad */
+.numPag{
+    position: absolute;
+    height: 566px;
+    width: 787px;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+  
+}
+
+
+    /* INICIO SECCIÓN INFORMATIVA */
+/* contenido general */
+
+.main{
+    
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+/* lado izquiero*/
+.seccion{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+/* imagen de perfil */
+.seccion img{
+    position: absolute;
+    left: 200px;
+    top: 60px;
+    
+    
+}
+
+/* recuadro con opacidad rojo */
+.box{
+    width: 600px;
+    height: 100px;
+    background-color: var(--colorRojo);
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    opacity: .6;
+    
+    
+}
+
+/* edición numero de pagina peqeño */
+
+.pag2{
+
+    font-size: 7rem;
+    font-family: var(--tipografia);
+    writing-mode: vertical-rl;
+    color: var(--colorTexto);
+    position: absolute;
+    left: 90px;
+    bottom: 15px;
+    z-index: 5;
 
 
 }
+
+/* lado derecho */
+/* medio fondo */
+.aside{
+    background-color: var(--colorFondo);
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+/* titulo : acerca de mi */
+
+aside h2{
+    font-size: 2rem;
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    justify-content: center;
+    text-align: center;
+    padding: 150px 0px;
+    position: relative;
+    z-index: 3
+
+}
+
+/* parrafo */
+.aside p{
+    font-family: var(--tipografia3);
+    text-align: justify;
+    color: var(--colorTexto);
+    padding: 30px 70px;
+    position: relative;
+    z-index: 4;
+}
+
+/* edición numero de pagina con opacidad grande */
+.pagdos{
+position: absolute;
+width: 800px;
+height: 507px;
+left: 0px;
+top: 0%;
+z-index: 2;
+
+}
+
