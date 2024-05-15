@@ -140,16 +140,7 @@ z-index: 999;
 
 }
 
-/* numero de pagina opacidad */
-.numPag{
-    position: absolute;
-    height: 566px;
-    width: 787px;
-    left: 0%;
-    top: 0%;
-    z-index: 1;
-  
-}
+
 
 
     /* - ----------INICIO SECCIÓN INFORMATIVA ---------*/
@@ -319,7 +310,6 @@ main{
     font-family: var(--tipografia3);
     color: var(--colorTexto);
     position: absolute;
-    z-index: 8;
     left: 16%;
     
  
@@ -335,19 +325,12 @@ main{
     position: absolute;
     right: -18%;
     bottom: 0px;
-    z-index: 2;
+    
     
    
 }
 
-/* numero de pagina 3 grande*/
 
-.numGrande3{
-    position: absolute;
-    height: 566px;
-    width: 787px;
-    top: 23%;
-}
 
 /* ----------SECCION INFORMATIVA 3--------- */
 
@@ -369,9 +352,8 @@ main{
     font-family: var(--tipografia);
     color: var(--colorTexto);
     margin-top: 40px;
-    margin-left: 60px;  
-    position: relative; 
-    z-index: 11;    
+    margin-left: 60px;   
+       
 }
 
 .titModelado{
@@ -392,7 +374,6 @@ main{
     align-items: center;
     z-index: 10;
     gap: 30px;
-    position: relative;
     margin-top: 5%;
     
 }
@@ -438,17 +419,13 @@ main{
     left: 30px;
     bottom: 50px;
 
-    /* left: 30px;
-    bottom: 50px; */
+   
 }
+/* -------SECCION 4 --------- */
 
-.numPag4{
-    width: 1030px;
-    height: 406px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 5
+.footer{
+
+  /* NO SE QUE HICE MAL EL FOOTER ME APARECE POR SOBRE 
+  SOBRE MI SECCION INFORMATIVA PIEZAS PUBLICITARIAS */
+
 }
-
-
