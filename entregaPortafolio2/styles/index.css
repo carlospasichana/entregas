@@ -1,0 +1,577 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/regen');
+
+
+
+
+/* VARIABLES */
+:root {
+    --tipografia: "Bebas Neue", sans-serif;
+    --tipografia2: "Reddit Sans", sans-serif;
+    --tipografia3: 'Regen', sans-serif;
+    --colorTexto: #333333;
+    --colorFondo: #DFDFDF;
+    --colorRojo: #FF512F;
+
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* INICIO HEADER */
+
+/* fondo principal */
+.fondo {
+    height: 100vh;
+    width: 100%;
+    font-family: var(--tipografia);
+    background-color: var(--colorFondo);
+    position: relative;
+    color: var(--colorTexto);
+
+}
+
+/* menu de navegacion */
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 50px;
+}
+
+/* lista menu de navegacion */
+
+ul li {
+    font-family: var(--tipografia);
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-size: 1.2rem;
+
+
+}
+
+/* titulos principales */
+header {
+
+    position: absolute;
+    bottom: 40%;
+    padding: 0px 50px;
+}
+
+/* tipografia --> portafolio */
+.textopor {
+    font-family: var(--tipografia3);
+}
+
+/* superposición titulos y detalle numero de pagina */
+.titulos {
+    position: absolute;
+    z-index: 4;
+}
+
+/* titulo 1: portafolio */
+header h1 {
+
+    font-size: 11rem;
+    color: var(--colorRojo);
+}
+
+/* titulo 2: industrial desing */
+header h2 {
+    margin-top: -40px;
+    margin-bottom: -20px;
+    font-size: 7rem;
+
+}
+
+
+/* titulo 3: carlos pasichana */
+header h3 {
+    font-size: 2rem;
+    font-family: var(--tipografia3);
+}
+
+/* detalle numero de pagina 001 pequeño*/
+
+.numeroPag {
+
+    font-size: 7rem;
+    font-family: var(--tipografia);
+    writing-mode: vertical-rl;
+    color: var(--colorTexto);
+    position: absolute;
+    bottom: 7%;
+    padding: 0px 1350px;
+
+
+}
+
+
+
+/* ubicación img carro */
+.render {
+    position: absolute;
+    height: 566px;
+    width: 787px;
+    right: 0%;
+    bottom: 0;
+    z-index: 999;
+}
+
+/* ubicacion img sombra */
+.sombra {
+    position: absolute;
+    height: 566px;
+    width: 787px;
+    right: -4%;
+    top: 28%;
+
+}
+
+
+/* INICIO MAIN */
+
+/* main: contenedor pader */
+main{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --------seccion informativa------- */
+/* contenedor hijo1 */
+#seccion{
+
+    display: flex;
+}
+
+/* div hijo 1.1 */
+/* propiedades contenedor hijo1.1 */
+.izquierdo{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+}
+
+
+/* recuadro rojo con opacidad */
+.box{
+    width: 600px;
+    height: 100px;
+    background-color: var(--colorRojo);
+    opacity: .6;
+    position: absolute;
+    bottom: 87px;
+}
+
+.imgPerfil{
+    width: 80%;
+    height: 100vh;
+}
+
+/* numero de pagina pequeño */
+.pag2{
+
+    font-size: 7rem;
+    font-family: var(--tipografia);
+    writing-mode: vertical-rl;
+    color: var(--colorTexto);
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+
+}
+
+/* div hij0 1.2 */
+
+/* propiedades contenedor hijo 1.2 */
+.derecho{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--colorFondo);
+    
+}
+
+.acercademi{
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+    padding: 90px;
+
+    
+    
+}
+
+.parrafo{
+    font-family: var(--tipografia3);
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+
+}
+
+.pagdos{ 
+    position: absolute;
+    width: 780px;
+    height: auto;
+    right: 0;
+    top: 100%;
+
+}
+
+
+/* SECCION DE ESTUDIOS Y HABILIDADES */
+
+/* lado izquierdo */
+.contenedorEstudios{
+
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: var(--tipografia);
+    gap: 10%;
+    
+}
+.iz{
+    background-color: var(--colorFondo);
+    width: 50%;
+    height:100vh;
+    text-align: center;
+    padding: 5%;
+    
+    
+}
+
+.iz p{
+    font-family: var(--tipografia3);
+    
+}
+.estudios, .pregrado, .bachiller, .formacion{
+    padding: 3%;
+}
+
+.estudios{
+    font-size: 30px;
+}
+
+.formacion{
+    font-size: 40px;
+}
+
+/* lado derecho 2 */
+.dr{
+    width: 40%;
+    height:100vh;
+    text-align: center;
+    padding: 5%;
+    
+}
+
+.habilidades{
+    font-size: 40px;
+    padding-bottom: 40%;
+}
+
+.programas{
+
+    background-color: var(--colorFondo);
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.desarrolloweb{
+    background-color: var(--colorFondo);
+    border-radius: 10px;
+}
+
+
+
+
+
+/*  SECCION INFORMATIVA 2*/
+
+
+/* seccion informativa 2 contenedor padre*/
+#seccion2{
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+/* contenedor imagenes */
+.contenedor2{
+    
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    display: flex;
+    
+    
+}
+/* imagenes centrales */
+.img2{
+    width: 357px;
+    height: 449px;
+
+
+}
+
+.img3{
+    width: 641px;
+    height: 449px;
+    
+}
+
+/* contenedor titulos */
+
+.contenedorTit{
+    display: flex;
+    gap: 1020px;
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    
+
+
+}
+
+.titulo2{
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 40px;
+}
+
+.titulo3{
+    margin-top: 50px;
+    margin-right: 30px;
+    font-size: 30px;
+    
+}
+
+/* parrafo */
+
+.parr2{
+    width: 68%;
+    font-family: var(--tipografia3);
+    color: var(--colorTexto);
+    position: absolute;
+    left: 16%;
+    
+ 
+    
+}
+
+/* numero de pagina pequeño */
+.numeropag3{
+    font-size: 7rem;
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    writing-mode: vertical-rl;
+    position: absolute;
+    right: -18%;
+    bottom: 0px;
+    
+ 
+}
+
+
+
+/* ----------SECCION INFORMATIVA 3--------- */
+
+/* contenedor padre */
+.seccion3{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorFondo);
+    border: solid var(--colorFondo);
+    
+    
+}
+
+
+/* titulos  */
+
+.conTitulos{
+    display: flex;
+    gap: 1020px;
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    margin-top: 40px;
+    margin-left: 60px;   
+       
+}
+
+.titModelado{
+    font-size: 40px;
+   
+}
+
+.titProyecto{
+    font-size: 30px;   
+}
+
+
+/* contenedor imagenes */
+
+.imgContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    gap: 30px;
+    margin-top: 5%;
+    
+}
+
+/* imagenes */
+
+.imgModelo{
+    width: 438px;
+    height: 329px;
+
+}
+
+.imgModelo2{
+    width: 302px;
+    height: 227px;
+
+}
+
+.imgModelo3{
+    width: 460px;
+    height: 259px;
+
+}
+
+/* parrafo */
+
+
+.parr3{
+    width: 68%;
+    font-family: var(--tipografia3);
+    color: var(--colorTexto);
+    left: 16%;
+    position: absolute;
+    margin-top: 5%;
+}
+
+.numeroPag4{
+    font-size: 7rem;
+    color: var(--colorTexto);
+    font-family: var(--tipografia);
+    writing-mode: vertical-rl;
+    /* position: relative; */
+    left: 30px;
+    bottom: 50px;
+
+   
+}
+
+/* SECCION INFORMATIVA 4 
+
+/* contenedor padre  */
+
+.seccion4{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorFondo);
+    border: solid var(--colorFondo);
+    
+    
+}
+
+/* contenedor titulos */
+.conTitulos4{
+    display: flex;
+    gap: 1020px;
+    font-family: var(--tipografia);
+    color: var(--colorTexto);
+    margin-top: 40px;
+    margin-left: 60px;   
+       
+}
+
+.titilustracion{
+    font-size: 40px;
+   
+}
+
+.titProyectos{
+    font-size: 30px;   
+}
+
+/* contenedor imagenes */
+
+.imgContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 5%;
+    
+}
+
+/* imagenes */
+
+.imgIlus{
+    width: 220px;
+    height: 340px;
+
+}
+
+.imgIlus2{
+    width: 568px;
+    height: 416px;
+
+}
+
+.imgIlus3{
+    width: 511px;
+    height: 361px;
+
+}
+
+/* parrafo */
+.parr4{
+    width: 68%;
+    font-family: var(--tipografia3);
+    color: var(--colorTexto);
+    left: 16%;
+    position: absolute;
+    margin-top: 5%;
+}
+
+/* numero de pagina */
+.numeroPag5{
+    font-size: 7rem;
+    color: var(--colorTexto);
+    font-family: var(--tipografia);
+    writing-mode: vertical-rl;
+    position: relative;
+    left: 87%;    
+
+   
+}
