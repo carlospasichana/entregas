@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 
-/* INICIO HEADER */
+/* -------INICIO HEADER --------*/
 
 /* fondo principal */
 .fondo {
@@ -238,7 +238,7 @@ main{
     top: 100%;
 
 }
-
+/* ------ INICIO MAIN---------- */
 
 /* SECCION DE ESTUDIOS Y HABILIDADES */
 
@@ -574,4 +574,38 @@ main{
     left: 87%;    
 
    
+}
+
+
+/* ------INICIO FOOTER------ */
+
+footer{
+    background-color: var(--colorTexto);
+    color: var(--colorFondo);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: var(--tipografia2);
+    
+    
+}
+
+.contenedor{
+    padding: 15px;
+}
+
+.contacto{
+
+    margin: 15px;
+    list-style: none;
+}
+
+.listaRedes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    list-style: none;
+    margin: 15px;
+    
 }
