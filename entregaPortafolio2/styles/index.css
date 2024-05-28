@@ -34,7 +34,7 @@ body {
 
 /* fondo principal */
 .fondo {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-family: var(--tipografia);
     background-color: var(--colorFondo);
@@ -348,10 +348,6 @@ main{
 
 }
 
-
-
-
-
 /*  SECCION INFORMATIVA 2*/
 
 
@@ -653,3 +649,60 @@ footer{
     
     
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width:490px){
+  
+    body{
+        width: 50%
+    }
+    header h1 {
+
+        font-size: 3rem;
+        color: var(--colorRojo);
+    }
+    
+    /* titulo 2: industrial desing */
+    header h2 {
+        margin-top: -7px;
+        margin-bottom: -3px;
+        font-size: 2rem;
+    }
+    
+    /* titulo 3: carlos pasichana */
+    header h3 {
+        font-size: 1rem;
+        font-family: var(--tipografia3);
+    }
+    
+    
+    
+    .render {
+        position: absolute;
+        height: 188px;
+        width: 266px;
+        right: 0%;
+        bottom: 25%;
+        z-index: 999;
+    }
+    
+    /* ubicacion img sombra */
+    .sombra {
+        position: absolute;
+        height: 188px;
+        width: 266px;
+        right: -4%;
+        top: 57%;
+        z-index: 9;
+    
+    }
+}
+
+
+
+
+
+
+
+
